@@ -8,7 +8,7 @@ export default function Document() {
           name="description"
           content="Portfolio website for Spencer Ferris"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />
