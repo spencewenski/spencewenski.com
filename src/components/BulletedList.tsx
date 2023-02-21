@@ -7,8 +7,9 @@ export type Input = {
 export default function BulletedList({ listItems }: Input) {
   return (
     <List sx={{ listStyleType: "disc", paddingLeft: 2 }}>
-      {listItems.map((item) => (
+      {listItems.map((item, index) => (
         <ListItem
+          key={index}
           sx={{
             display: "list-item",
             padding: 0,

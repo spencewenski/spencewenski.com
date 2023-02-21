@@ -19,6 +19,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
+        {/*Todo: Use `next/image` instead -- I couldn't get it to scale well, so using `img` for now.*/}
         <img
           src={projectInfo.imageUrl}
           alt={`Project preview image for ${projectInfo.title}`}
