@@ -1,5 +1,6 @@
-import ProjectListItem, { ProjectInfo } from "@/components/ProjectListItem";
+import ProjectListItem from "@/components/ProjectListItem";
 import { Grid } from "@mui/material";
+import { ProjectInfo } from "@/components/ProjectDetails";
 
 const PROJECTS: Array<ProjectInfo> = [
   {
@@ -30,7 +31,7 @@ export default function ProjectList({}) {
     <Grid container spacing={2}>
       {PROJECTS.map((project, index) => (
         <Grid key={project.title} item xs={12}>
-          <ProjectListItem projectInfo={project} index={index} />
+          <ProjectListItem projectInfo={project} />
         </Grid>
       ))}
     </Grid>

@@ -16,11 +16,11 @@ export default function Home() {
             <Summary />
           </Grid>
           <Grid item xs={12}>
-            <Typography variant={"h4"}>Professional Experience</Typography>
+            <Typography variant={"h3"}>Professional Experience</Typography>
             <ProfessionalExperience />
           </Grid>
           <Grid item xs={12}>
-            <Typography variant={"h4"}>Personal Projects</Typography>
+            <Typography variant={"h3"}>Personal Projects</Typography>
             <ProjectList />
           </Grid>
         </Grid>
