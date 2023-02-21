@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Container, Grid, Typography } from "@mui/material";
 import ProjectList from "@/components/ProjectList";
 import Summary from "@/components/Summary";
+import ProfessionalExperience from "@/components/ProfessionalExperience";
 
 export default function Home() {
   return (
@@ -14,16 +15,12 @@ export default function Home() {
           <Grid item xs={12}>
             <Summary />
           </Grid>
-          {/*<Grid item xs={12}>*/}
-          {/*  <Typography variant={"h4"} align={"center"}>*/}
-          {/*    Professional Experience*/}
-          {/*  </Typography>*/}
-          {/*  <ProfessionalExperience />*/}
-          {/*</Grid>*/}
           <Grid item xs={12}>
-            <Typography variant={"h4"} align={"center"}>
-              Personal Projects
-            </Typography>
+            <Typography variant={"h4"}>Professional Experience</Typography>
+            <ProfessionalExperience />
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant={"h4"}>Personal Projects</Typography>
             <ProjectList />
           </Grid>
         </Grid>
