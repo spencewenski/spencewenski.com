@@ -1,11 +1,12 @@
 import { Button, Chip, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import LaunchIcon from "@mui/icons-material/Launch";
+import { ReactNode } from "react";
 
 export type ProjectInfo = {
   title: string;
   imageUrl?: string;
-  summary: Array<any>;
+  summary: Array<ReactNode>;
   technologies: Array<string>;
   website?: string;
   source?: string;
@@ -31,7 +32,11 @@ export default function ProjectDetails({ projectInfo }: Input) {
         <Typography variant={"h6"} gutterBottom>
           {projectInfo.title}
         </Typography>
-        <Typography gutterBottom>{projectInfo.summary}</Typography>
+        {projectInfo.summary.map((summary, index) => (
+          <Typography gutterBottom key={index}>
+            {summary}
+          </Typography>
+        ))}
         <Grid container spacing={1} marginBottom={"1em"}>
           {projectInfo.technologies.map((technology) => (
             <Grid key={technology} item xs={"auto"}>

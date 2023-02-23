@@ -8,7 +8,7 @@ export type Input = {
 };
 
 export default function RoleAndDate({ role, start, end }: Input) {
-  const isLargeScreen = useBreakpointIsAtLeast({ breakpoint: "md" });
+  const isLargeScreen = useBreakpointIsAtLeast({ breakpoint: "sm" });
 
   return (
     <>
@@ -20,10 +20,12 @@ export default function RoleAndDate({ role, start, end }: Input) {
         alignItems={"flex-end"}
       >
         <Grid item xs={"auto"}>
-          <Typography variant={isLargeScreen ? "h5" : "h6"}>{role}</Typography>
+          <Typography variant={isLargeScreen ? "h5" : undefined}>
+            {role}
+          </Typography>
         </Grid>
         <Grid item xs={"auto"}>
-          <Typography variant={isLargeScreen ? "h6" : undefined}>
+          <Typography variant={isLargeScreen ? "h6" : "caption"}>
             {start} - {end}
           </Typography>
         </Grid>
