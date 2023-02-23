@@ -1,4 +1,5 @@
 import { Grid, Typography } from "@mui/material";
+import useBreakpointIsAtLeast from "@/hooks/useBreakpointIsAtLeast";
 
 export type Input = {
   role: string;
@@ -7,6 +8,8 @@ export type Input = {
 };
 
 export default function RoleAndDate({ role, start, end }: Input) {
+  const isLargeScreen = useBreakpointIsAtLeast({ breakpoint: "md" });
+
   return (
     <>
       <Grid
@@ -17,10 +20,10 @@ export default function RoleAndDate({ role, start, end }: Input) {
         alignItems={"flex-end"}
       >
         <Grid item xs={"auto"}>
-          <Typography variant={"h5"}>{role}</Typography>
+          <Typography variant={isLargeScreen ? "h5" : "h6"}>{role}</Typography>
         </Grid>
         <Grid item xs={"auto"}>
-          <Typography>
+          <Typography variant={isLargeScreen ? "h6" : undefined}>
             {start} - {end}
           </Typography>
         </Grid>
