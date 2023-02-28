@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && prettier -c .",
+    "build": "next build && prettier --version && prettier --loglevel debug -c .",
     "start": "next start",
     "lint": "next lint"
   },
