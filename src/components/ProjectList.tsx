@@ -24,6 +24,23 @@ const PROJECTS: Array<ProjectInfo> = [
     ],
     website: "https://massdissent.com",
   },
+  {
+    title: "Grouped Timers for Pebble",
+    imageUrl: "/grouped_timers_preview.png",
+    summary: [
+      "Timer app for Pebble watches written in C that allows grouping timers into lists.",
+    ],
+    technologies: ["C", "Pebble", "MVC"],
+    source: "https://gitlab.com/spencewenski/pebble_grouped_timers",
+  },
+  {
+    title: "Financial Transaction Processor",
+    summary: [
+      "A simple CLI application written to transform transaction records of financial accounts to different formats for the purpose of importing into personal budgeting software.",
+    ],
+    technologies: ["Rust", "GitHub Actions"],
+    source: "https://github.com/spencewenski/transaction_processor",
+  },
 ];
 
 export default function ProjectList({}) {
