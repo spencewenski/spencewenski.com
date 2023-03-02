@@ -3,6 +3,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import ProjectList from "@/components/ProjectList";
 import Summary from "@/components/Summary";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
+import Technologies from "@/components/Technologies";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
           <Grid item xs={12}>
             <Typography variant={"h3"}>Personal Projects</Typography>
             <ProjectList />
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant={"h3"}>Technologies</Typography>
+            <Technologies />
           </Grid>
         </Grid>
       </Container>

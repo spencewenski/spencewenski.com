@@ -1,7 +1,8 @@
-import { Button, Chip, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { ReactNode } from "react";
+import TechnologiesList from "@/components/TechnologiesList";
 
 export type ProjectInfo = {
   title: string;
@@ -37,13 +38,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
             {summary}
           </Typography>
         ))}
-        <Grid container spacing={1} marginBottom={"1em"}>
-          {projectInfo.technologies.map((technology) => (
-            <Grid key={technology} item xs={"auto"}>
-              <Chip variant={"outlined"} label={technology} />
-            </Grid>
-          ))}
-        </Grid>
+        <TechnologiesList technologies={projectInfo.technologies} />
         {(!!projectInfo.website || !!projectInfo.source) && (
           <Grid container spacing={1}>
             {!!projectInfo.website && (

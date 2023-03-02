@@ -4,7 +4,7 @@ import RoleAndDate from "@/components/RoleAndDate";
 import BulletedList from "@/components/BulletedList";
 
 const INTERNSHIP_ACHIEVEMENTS: Array<string> = [
-  "Created a full stack application for tracking incident retrospectives using the LAMP stack and a custom REST API.",
+  "Created a web app for tracking incident retrospectives using the Angular, SQL, and PHP (LAMP stack).",
 ];
 
 export default function BoxExperience({}) {
