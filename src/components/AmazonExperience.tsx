@@ -7,6 +7,8 @@ import RoleAndDate from "@/components/RoleAndDate";
 const WSIW_PROJECT_INFO: ProjectInfo = {
   title: '"Alexa, What Should I Watch?" (Current Project)',
   imageUrl: "/wsiw_preview.jpeg",
+  imageWidth: 1920,
+  imageHeight: 1080,
   summary: [
     '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I work closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
     "The backend skill code is written using Java/Spring and is deployed on EC2, the UI is written using Alexa APL, and the dialog model is written using ACDL.",
@@ -49,7 +51,9 @@ export default function AmazonExperience({}) {
             <ProjectDetails projectInfo={WSIW_PROJECT_INFO} />
           </Grid>
           <Grid item xs={12}>
-            <Typography variant={"h6"}>Other Notable Achievements</Typography>
+            <Typography variant={"h6"} marginTop={1}>
+              Other Notable Achievements
+            </Typography>
             <BulletedList listItems={SDE_II_NOTABLE_ACHIEVEMENTS} />
           </Grid>
           <RoleAndDate

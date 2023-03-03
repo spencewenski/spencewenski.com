@@ -6,6 +6,8 @@ const PROJECTS: Array<ProjectInfo> = [
   {
     title: "Mass Dissent",
     imageUrl: "/mass_dissent_preview.png",
+    imageWidth: 2880,
+    imageHeight: 1822,
     summary: [
       "Mass Dissent is a website that provides an easy way to send a short message as physical mail to your representatives in the U.S. Congress. The site reduces the effort required to send a letter to an elected official, hopefully resulting in more people writing to their representatives regarding the issues they care about.",
     ],
@@ -27,6 +29,8 @@ const PROJECTS: Array<ProjectInfo> = [
   {
     title: "Grouped Timers for Pebble",
     imageUrl: "/grouped_timers_preview.png",
+    imageWidth: 594,
+    imageHeight: 228,
     summary: [
       "Timer app for Pebble watches written in C that allows grouping timers into lists.",
     ],

@@ -1,12 +1,15 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import LaunchIcon from "@mui/icons-material/Launch";
-import { ReactNode, useMemo } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import TechnologiesList from "@/components/TechnologiesList";
+import Image from "next/image";
 
 export type ProjectInfo = {
   title: string;
   imageUrl?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   summary: Array<ReactNode>;
   technologies: Array<string>;
   website?: string;
@@ -18,22 +21,46 @@ export type Input = {
 };
 
 export default function ProjectDetails({ projectInfo }: Input) {
-  const hasImage = useMemo(() => !!projectInfo.imageUrl, []);
+  const imageWrapperRef = useRef<HTMLElement>(null);
+  const [imageHeight, setImageHeight] = useState<number>(0);
+
+  // Todo: adjust image size when screen size changes
+  useEffect(() => {
+    if (
+      !!imageWrapperRef?.current &&
+      !!projectInfo.imageUrl &&
+      !!projectInfo.imageWidth &&
+      !!projectInfo.imageHeight
+    ) {
+      setImageHeight(
+        imageWrapperRef.current.offsetWidth *
+          (projectInfo.imageHeight / projectInfo.imageWidth)
+      );
+    }
+  }, [projectInfo.imageHeight, projectInfo.imageUrl, projectInfo.imageWidth]);
 
   return (
     <Grid container spacing={2}>
-      {hasImage && (
+      {!!projectInfo.imageUrl && (
         <Grid item xs={12} md={6}>
+          <Box height={imageHeight} position={"relative"} ref={imageWrapperRef}>
+            <Image
+              src={projectInfo.imageUrl}
+              alt={`Project preview image for ${projectInfo.title}`}
+              style={{ objectFit: "contain" }}
+              fill
+            />
+          </Box>
           {/*Todo: Use `next/image` instead -- I couldn't get it to scale well, so using `img` for now.*/}
-          <img
-            src={projectInfo.imageUrl}
-            alt={`Project preview image for ${projectInfo.title}`}
-            width={"100%"}
-            height={"auto"}
-          />
+          {/*<img*/}
+          {/*  src={projectInfo.imageUrl}*/}
+          {/*  alt={`Project preview image for ${projectInfo.title}`}*/}
+          {/*  width={"100%"}*/}
+          {/*  height={"auto"}*/}
+          {/*/>*/}
         </Grid>
       )}
-      <Grid item xs={12} md={hasImage ? 6 : 12}>
+      <Grid item xs={12} md={!!projectInfo.imageUrl ? 6 : 12}>
         <Typography variant={"h6"} gutterBottom>
           {projectInfo.title}
         </Typography>
