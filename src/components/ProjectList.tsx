@@ -32,7 +32,7 @@ const PROJECTS: Array<ProjectInfo> = [
     imageWidth: 594,
     imageHeight: 228,
     summary: [
-      "Timer app for Pebble watches written in C that allows grouping timers into lists.",
+      "A timer app for Pebble watches written in C that allows grouping timers into lists.",
     ],
     technologies: ["C", "Pebble", "MVC"],
     source: "https://gitlab.com/spencewenski/pebble_grouped_timers",
