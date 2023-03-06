@@ -74,7 +74,11 @@ export default function ProjectDetails({ projectInfo }: Input) {
           <Grid container spacing={1}>
             {!!projectInfo.website && (
               <Grid item xs={"auto"}>
-                <Link href={projectInfo.website} passHref={true}>
+                <Link
+                  href={projectInfo.website}
+                  passHref={true}
+                  prefetch={false}
+                >
                   <Button variant={"contained"} endIcon={<LaunchIcon />}>
                     Website
                   </Button>
@@ -83,7 +87,11 @@ export default function ProjectDetails({ projectInfo }: Input) {
             )}
             {!!projectInfo.source && (
               <Grid item xs={"auto"}>
-                <Link href={projectInfo.source} passHref={true}>
+                <Link
+                  href={projectInfo.source}
+                  passHref={true}
+                  prefetch={false}
+                >
                   <Button variant={"contained"} endIcon={<LaunchIcon />}>
                     Source
                   </Button>
