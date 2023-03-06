@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { Container, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ProjectList from "@/components/ProjectList";
-import Summary from "@/components/Summary";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Technologies from "@/components/Technologies";
 
@@ -11,11 +10,8 @@ export default function Home() {
       <Head>
         <title>Spencewenski</title>
       </Head>
-      <Container>
+      <>
         <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Summary />
-          </Grid>
           <Grid item xs={12}>
             <Typography variant={"h3"}>Professional Experience</Typography>
             <ProfessionalExperience />
@@ -29,7 +25,7 @@ export default function Home() {
             <Technologies />
           </Grid>
         </Grid>
-      </Container>
+      </>
     </>
   );
 }

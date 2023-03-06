@@ -4,17 +4,25 @@ import GitHubIcon from "@/images/github-mark.svg";
 import GitLabIcon from "@/images/gitlab-logo-500.svg";
 import SourcehutLogo from "@/images/sourcehut.svg";
 import EmailIcon from "@mui/icons-material/Email";
+import HomeIcon from "@mui/icons-material/Home";
 
 export default function Summary({}) {
   return (
     <>
-      <Grid container>
+      <Grid container marginBottom={2}>
         <Grid item xs={12}>
           <Typography variant={"h2"} align={"center"}>
             Spencer Ferris
           </Typography>
         </Grid>
         <Grid item xs={12} container spacing={2} justifyContent={"center"}>
+          <Grid item xs={"auto"}>
+            <Link href={"/"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<HomeIcon />}>
+                Portfolio
+              </Button>
+            </Link>
+          </Grid>
           <Grid item xs={"auto"}>
             <Link
               href={"https://github.com/spencewenski"}

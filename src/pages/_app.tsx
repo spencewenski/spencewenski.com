@@ -1,8 +1,10 @@
 import type { AppProps } from "next/app";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, Shadows, ThemeProvider } from "@mui/material";
 import Layout from "@/components/Layout";
 
-const THEME = createTheme();
+const THEME = createTheme({
+  shadows: Array(25).fill("none") as Shadows,
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
