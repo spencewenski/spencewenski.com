@@ -57,7 +57,7 @@ export default function Summary({}) {
           </Grid>
           <Grid item xs={"auto"}>
             <Link
-              href={"https://sr.ht/~spencewenski"}
+              href={"https://git.sr.ht/~spencewenski/"}
               passHref={true}
               prefetch={false}
             >
@@ -72,12 +72,7 @@ export default function Summary({}) {
             </Link>
           </Grid>
           <Grid item xs={"auto"}>
-            {/*<Link href={"mailto:portfolio@spencewenski.com"}>Contact</Link>*/}
-            <Link
-              href={"mailto:portfolio@spencewenski.com"}
-              passHref={true}
-              prefetch={false}
-            >
+            <Link href={"/contact"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<EmailIcon />}>
                 Contact
               </Button>
