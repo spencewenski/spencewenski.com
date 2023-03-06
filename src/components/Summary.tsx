@@ -2,7 +2,7 @@ import { Button, Grid, SvgIcon, Typography } from "@mui/material";
 import Link from "next/link";
 import GitHubIcon from "@/images/github-mark.svg";
 import GitLabIcon from "@/images/gitlab-logo-500.svg";
-import SourcehutLogo from "@/images/sourcehut.svg";
+import SourceHutLogo from "@/images/sourcehut.svg";
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
 
@@ -64,7 +64,7 @@ export default function Summary({}) {
               <Button
                 variant={"contained"}
                 startIcon={
-                  <SvgIcon component={SourcehutLogo} viewBox={"0 0 500 500"} />
+                  <SvgIcon component={SourceHutLogo} viewBox={"0 0 500 500"} />
                 }
               >
                 sourcehut

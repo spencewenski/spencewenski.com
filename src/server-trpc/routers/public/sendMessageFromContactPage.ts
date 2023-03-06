@@ -21,6 +21,9 @@ export const sendMessageFromContactPage = appProcedure
   )
   .mutation(async (req) => {
     const { input } = req;
+
+    console.info({ input });
+
     const dynamicTemplateData: ContactFormTemplateData = {
       email: input.email,
       salary: input.salary,

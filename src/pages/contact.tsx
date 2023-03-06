@@ -7,14 +7,48 @@ import { isEmpty } from "lodash";
 import CustomTextField from "@/components/CustomTextField";
 import SendIcon from "@mui/icons-material/Send";
 import Head from "next/head";
+import { useEffectOnce, useLocalStorage } from "react-use";
+
+type ContactFormData = {
+  email: string;
+  salary: string;
+  message: string;
+};
+
+const DEFAULT_CONTACT_INFO = {
+  email: "",
+  salary: "",
+  message: "",
+};
 
 export default function Contact({}) {
   const sendMessageFromContactPageMutation =
     trpc.sendMessageFromContactPage.useMutation();
-  const [email, setEmail] = useState<string>("");
-  const [salary, setSalary] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [email, setEmail] = useState<ContactFormData["email"]>("");
+  const [salary, setSalary] = useState<ContactFormData["salary"]>("");
+  const [message, setMessage] = useState<ContactFormData["message"]>("");
   const { pathname, push, query } = useRouter();
+
+  // LocalStorage of contact info
+  const [contactLS, setContactLS] = useLocalStorage<ContactFormData>(
+    "contactInfo",
+    DEFAULT_CONTACT_INFO
+  );
+  useEffectOnce(() => {
+    if (!contactLS) {
+      return;
+    }
+    setEmail(contactLS.email);
+    setSalary(contactLS.salary);
+    setMessage(contactLS.message);
+  });
+  useEffect(() => {
+    setContactLS({
+      email,
+      salary,
+      message,
+    });
+  }, [email, message, salary, setContactLS]);
 
   const formSuccess: boolean = useMemo(() => {
     const success = query["success"];
@@ -29,8 +63,9 @@ export default function Contact({}) {
       setEmail("");
       setSalary("");
       setMessage("");
+      setContactLS(DEFAULT_CONTACT_INFO);
     }
-  }, [formSuccess]);
+  }, [formSuccess, setContactLS]);
 
   const handleFormSubmitted = useCallback(
     async (e: FormEvent<HTMLDivElement>) => {
