@@ -1,11 +1,13 @@
 import ProjectListItem from "@/components/ProjectListItem";
 import { Grid } from "@mui/material";
 import { ProjectInfo } from "@/components/ProjectDetails";
+import MassDissentPreview from "@/images/mass_dissent_preview.png";
+import GroupedTimersPreview from "@/images/grouped_timers_preview.png";
 
 const PROJECTS: Array<ProjectInfo> = [
   {
     title: "Mass Dissent",
-    imageUrl: "/mass_dissent_preview.png",
+    imageUrl: MassDissentPreview,
     imageWidth: 2880,
     imageHeight: 1822,
     summary: [
@@ -28,7 +30,7 @@ const PROJECTS: Array<ProjectInfo> = [
   },
   {
     title: "Grouped Timers for Pebble",
-    imageUrl: "/grouped_timers_preview.png",
+    imageUrl: GroupedTimersPreview,
     imageWidth: 594,
     imageHeight: 228,
     summary: [

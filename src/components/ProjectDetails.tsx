@@ -3,11 +3,11 @@ import Link from "next/link";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import TechnologiesList from "@/components/TechnologiesList";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export type ProjectInfo = {
   title: string;
-  imageUrl?: string;
+  imageUrl?: string | StaticImageData;
   imageWidth?: number;
   imageHeight?: number;
   summary: Array<ReactNode>;

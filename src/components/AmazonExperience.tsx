@@ -3,10 +3,11 @@ import ProjectDetails, { ProjectInfo } from "@/components/ProjectDetails";
 import BulletedList from "@/components/BulletedList";
 import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
+import WsiwImagePreview from "@/images/wsiw_preview.jpeg";
 
 const WSIW_PROJECT_INFO: ProjectInfo = {
   title: '"Alexa, What Should I Watch?" (Current Project)',
-  imageUrl: "/wsiw_preview.jpeg",
+  imageUrl: WsiwImagePreview,
   imageWidth: 1920,
   imageHeight: 1080,
   summary: [
