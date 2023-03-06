@@ -4,6 +4,7 @@ import ProjectList from "@/components/ProjectList";
 import Summary from "@/components/Summary";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Technologies from "@/components/Technologies";
+import { isEmpty } from "lodash";
 
 export default function Home() {
   return (
@@ -30,4 +31,35 @@ export default function Home() {
       </Grid>
     </>
   );
+}
+
+// https://nextjs.org/docs/api-reference/data-fetching/get-static-props
+// A `getStaticProps` method to enable checking at build time that required
+// environment variables are configured.
+export async function getStaticProps() {
+  // Load environment variables and verify that they exist
+  let missingEnvVars: string[] = [];
+  if (!isEnvVarValid(process.env.SEND_GRID_MAIL_SEND_API_KEY)) {
+    missingEnvVars.push("SEND_GRID_MAIL_SEND_API_KEY");
+  }
+  if (!isEnvVarValid(process.env.SEND_GRID_CONTACT_FORM_TEMPLATE_ID)) {
+    missingEnvVars.push("SEND_GRID_CONTACT_FORM_TEMPLATE_ID");
+  }
+  if (!isEnvVarValid(process.env.SEND_GRID_CONTACT_FORM_EMAIL)) {
+    missingEnvVars.push("SEND_GRID_CONTACT_FORM_EMAIL");
+  }
+
+  if (!isEmpty(missingEnvVars)) {
+    throw `The following required env vars are not defined: ${missingEnvVars.join(
+      ", "
+    )}`;
+  }
+
+  return {
+    props: {},
+  };
+}
+
+function isEnvVarValid(value?: string): boolean {
+  return typeof value === "string" && !isEmpty(value);
 }
