@@ -1,9 +1,11 @@
 import Head from "next/head";
 import { Grid, Typography } from "@mui/material";
-import ProjectList from "@/components/ProjectList";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
-import Technologies from "@/components/Technologies";
 import { isEmpty } from "lodash";
+import dynamic from "next/dynamic";
+
+const ProjectList = dynamic(() => import("@/components/ProjectList"));
+const Technologies = dynamic(() => import("@/components/Technologies"));
 
 export default function Home() {
   return (
