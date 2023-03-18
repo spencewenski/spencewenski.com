@@ -7,7 +7,7 @@ import { isEmpty } from "lodash";
 import CustomTextField from "@/components/CustomTextField";
 import SendIcon from "@mui/icons-material/Send";
 import Head from "next/head";
-import { useEffectOnce, useLocalStorage } from "react-use";
+import { useEffectOnce, useLocalStorage } from "usehooks-ts";
 
 type ContactFormData = {
   email: string;
