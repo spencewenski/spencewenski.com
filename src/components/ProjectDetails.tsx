@@ -50,6 +50,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
               alt={`Project preview image for ${projectInfo.title}`}
               style={{ objectFit: "contain" }}
               priority={projectInfo.imagePriority}
+              sizes={"(max-width: 900px) 817px, 551px"}
               fill
             />
           </Box>
