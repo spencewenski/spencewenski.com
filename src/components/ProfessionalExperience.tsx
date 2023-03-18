@@ -1,8 +1,6 @@
 import AmazonExperience from "@/components/AmazonExperience";
+import BoxExperience from "@/components/BoxExperience";
 import { Grid } from "@mui/material";
-import dynamic from "next/dynamic";
-
-const BoxExperience = dynamic(() => import("@/components/BoxExperience"));
 
 export default function ProfessionalExperience({}) {
   return (
