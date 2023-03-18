@@ -10,6 +10,7 @@ const WSIW_PROJECT_INFO: ProjectInfo = {
   imageUrl: WsiwImagePreview,
   imageWidth: 1920,
   imageHeight: 1080,
+  imagePriority: true,
   summary: [
     '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I work closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
     "The backend skill code is written using Java/Spring and is deployed on EC2, the UI is written using Alexa APL, and the dialog model is written using ACDL.",

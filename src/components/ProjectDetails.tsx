@@ -10,6 +10,7 @@ export type ProjectInfo = {
   imageUrl?: string | StaticImageData;
   imageWidth?: number;
   imageHeight?: number;
+  imagePriority?: boolean;
   summary: Array<ReactNode>;
   technologies: Array<string>;
   website?: string;
@@ -48,16 +49,10 @@ export default function ProjectDetails({ projectInfo }: Input) {
               src={projectInfo.imageUrl}
               alt={`Project preview image for ${projectInfo.title}`}
               style={{ objectFit: "contain" }}
+              priority={projectInfo.imagePriority}
               fill
             />
           </Box>
-          {/*Todo: Use `next/image` instead -- I couldn't get it to scale well, so using `img` for now.*/}
-          {/*<img*/}
-          {/*  src={projectInfo.imageUrl}*/}
-          {/*  alt={`Project preview image for ${projectInfo.title}`}*/}
-          {/*  width={"100%"}*/}
-          {/*  height={"auto"}*/}
-          {/*/>*/}
         </Grid>
       )}
       <Grid item xs={12} md={!!projectInfo.imageUrl ? 6 : 12}>
