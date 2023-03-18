@@ -3,7 +3,7 @@ import ProjectDetails, { ProjectInfo } from "@/components/ProjectDetails";
 import BulletedList from "@/components/BulletedList";
 import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
-import WsiwImagePreview from "@/images/wsiw_preview.jpeg";
+import WsiwImagePreview from "@/images/wsiw_preview.webp";
 
 const WSIW_PROJECT_INFO: ProjectInfo = {
   title: '"Alexa, What Should I Watch?" (Current Project)',

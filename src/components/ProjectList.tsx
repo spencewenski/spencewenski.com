@@ -1,7 +1,7 @@
 import ProjectListItem from "@/components/ProjectListItem";
 import { Grid } from "@mui/material";
 import { ProjectInfo } from "@/components/ProjectDetails";
-import MassDissentPreview from "@/images/mass_dissent_preview.png";
+import MassDissentPreview from "@/images/mass_dissent_preview.webp";
 import GroupedTimersPreview from "@/images/grouped_timers_preview.png";
 
 const PROJECTS: Array<ProjectInfo> = [
