@@ -5,6 +5,7 @@ import GitLabIcon from "@/images/gitlab-logo-500.svg";
 import SourceHutLogo from "@/images/sourcehut.svg";
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 
 export default function Summary({}) {
   return (
@@ -68,6 +69,13 @@ export default function Summary({}) {
                 }
               >
                 sourcehut
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item xs={"auto"}>
+            <Link href={"/faq"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
+                FAQ
               </Button>
             </Link>
           </Grid>
