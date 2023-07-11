@@ -3,7 +3,8 @@ import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
 
 export default function ApolloExperience({}) {
-  return <>
+  return (
+    <>
       <Typography variant={"h4"}>Apollo.io</Typography>
       <SectionWrapper>
         <Grid container>
@@ -15,5 +16,6 @@ export default function ApolloExperience({}) {
           <Typography>Conversation Intelligence team</Typography>
         </Grid>
       </SectionWrapper>
-  </>
+    </>
+  );
 }
