@@ -6,14 +6,14 @@ import RoleAndDate from "@/components/RoleAndDate";
 import WsiwImagePreview from "@/images/wsiw_preview.webp";
 
 const WSIW_PROJECT_INFO: ProjectInfo = {
-  title: '"Alexa, What Should I Watch?" (Current Project)',
+  title: '"Alexa, What Should I Watch?"',
   imageUrl: WsiwImagePreview,
   imageWidth: 1920,
   imageHeight: 1080,
   imagePriority: true,
   summary: [
-    '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I work closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
-    "The backend skill code is written using Java/Spring and is deployed on EC2, the UI is written using Alexa APL, and the dialog model is written using ACDL.",
+    '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I worked closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
+    "The backend skill code was written using Java/Spring and was deployed on EC2, the UI was written using Alexa APL, and the dialog model was written using ACDL.",
   ],
   technologies: ["Java", "Spring", "Alexa", "AWS"],
 };
@@ -24,7 +24,7 @@ const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
   "Ran A/B tests to measure how new features and UX changes impact our key metrics.",
   "Developed an Android application to enable Amazon Music and other media apps to integrate with Alexa for fully featured voice support.",
   "Worked with the Alexa Video team to enable playing a specific season and episode of a show using Alexa.",
-  "Running a working group to improve the operational excellence of my team's (and our sister team's) code.",
+  "Ran a working group to improve the operational excellence of my team's (and our sister team's) code.",
   "Actively involved in mentoring, code reviews, and interviewing.",
 ];
 
@@ -47,7 +47,7 @@ export default function AmazonExperience({}) {
           <RoleAndDate
             role={"Software Development Engineer II"}
             start={"Apr 2018"}
-            end={"Present"}
+            end={"June 2023"}
           />
           <Grid item xs={12}>
             <ProjectDetails projectInfo={WSIW_PROJECT_INFO} />
