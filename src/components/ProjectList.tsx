@@ -26,7 +26,7 @@ const PROJECTS: Array<ProjectInfo> = [
       "Sendgrid",
       "Supabase",
     ],
-    website: "https://massdissent.com",
+    website: "https://twitter-mailer-app-massdissent.vercel.app/",
   },
   {
     title: "Grouped Timers for Pebble",
