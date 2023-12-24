@@ -35,7 +35,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
     ) {
       setImageHeight(
         imageWrapperRef.current.offsetWidth *
-          (projectInfo.imageHeight / projectInfo.imageWidth)
+          (projectInfo.imageHeight / projectInfo.imageWidth),
       );
     }
   }, [projectInfo.imageHeight, projectInfo.imageUrl, projectInfo.imageWidth]);

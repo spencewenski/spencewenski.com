@@ -17,7 +17,7 @@ export const sendMessageFromContactPage = appProcedure
       email: z.string().email(),
       salary: z.string().trim(),
       message: z.string().trim(),
-    })
+    }),
   )
   .mutation(async (req) => {
     const { input } = req;

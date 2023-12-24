@@ -49,7 +49,7 @@ export async function getStaticProps() {
 
   if (!isEmpty(missingEnvVars)) {
     throw `The following required env vars are not defined: ${missingEnvVars.join(
-      ", "
+      ", ",
     )}`;
   }
 

@@ -17,7 +17,7 @@ interface CreateInnerContextOptions extends Partial<CreateNextContextOptions> {}
  * @see https://trpc.io/docs/context#inner-and-outer-context
  */
 export async function createContextInner(
-  opts?: CreateInnerContextOptions
+  opts?: CreateInnerContextOptions,
 ): Promise<CreateInnerContextOptions> {
   return {};
 }

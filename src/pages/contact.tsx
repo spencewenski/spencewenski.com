@@ -32,7 +32,7 @@ export default function Contact({}) {
   // LocalStorage of contact info
   const [contactLS, setContactLS] = useLocalStorage<ContactFormData>(
     "contactInfo",
-    DEFAULT_CONTACT_INFO
+    DEFAULT_CONTACT_INFO,
   );
   useEffectOnce(() => {
     if (!contactLS) {
@@ -83,7 +83,14 @@ export default function Contact({}) {
         },
       });
     },
-    [email, message, pathname, push, salary, sendMessageFromContactPageMutation]
+    [
+      email,
+      message,
+      pathname,
+      push,
+      salary,
+      sendMessageFromContactPageMutation,
+    ],
   );
 
   const emailError = useCallback(() => {
