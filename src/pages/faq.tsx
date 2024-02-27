@@ -1,6 +1,7 @@
 import { Grid, Paper, Typography } from "@mui/material";
 import { ReactNode } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 type QA = {
   question: string;
@@ -69,6 +70,10 @@ const QUESTIONS_AND_ANSWERS: Array<QA> = [
 export default function FAQ() {
   return (
     <>
+      <Head>
+        <title>Spencewenski | FAQ</title>
+      </Head>
+
       <Typography variant={"h4"} gutterBottom>
         Frequently Asked Questions
       </Typography>
