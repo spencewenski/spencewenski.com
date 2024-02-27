@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Grid, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 export default function Now() {
   return (
@@ -8,11 +8,11 @@ export default function Now() {
         <title>Spencewenski | Now</title>
       </Head>
       <>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography variant={"h3"}>Now</Typography>
-          </Grid>
-        </Grid>
+        <Typography variant={"h3"}>Now</Typography>
+        <Typography variant={"subtitle1"}>
+          What I&apos;m working on now.
+        </Typography>
+        <Typography variant={"subtitle2"}>Last updated: 27 Feb 2024</Typography>
       </>
     </>
   );

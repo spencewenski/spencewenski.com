@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Grid, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -9,11 +10,12 @@ export default function About() {
         <title>Spencewenski | About</title>
       </Head>
       <>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography variant={"h3"}>About</Typography>
-          </Grid>
-        </Grid>
+        <Typography variant={"h3"}>About</Typography>
+        <Typography variant={"subtitle1"}>
+          A brief summary of what I&apos;ve worked on in the past. See my{" "}
+          <Link href={"/"}>portfolio page</Link> for more details.
+        </Typography>
+        <Typography variant={"subtitle2"}>Last updated: 27 Feb 2024</Typography>
       </>
     </>
   );

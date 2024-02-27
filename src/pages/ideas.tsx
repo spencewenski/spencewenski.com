@@ -1,6 +1,5 @@
 import Head from "next/head";
-import { Grid, Typography } from "@mui/material";
-import ProfessionalExperience from "@/components/ProfessionalExperience";
+import { Typography } from "@mui/material";
 
 export default function Ideas() {
   return (
@@ -9,11 +8,11 @@ export default function Ideas() {
         <title>Spencewenski | Ideas</title>
       </Head>
       <>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography variant={"h3"}>Ideas</Typography>
-          </Grid>
-        </Grid>
+        <Typography variant={"h3"}>Ideas</Typography>
+        <Typography variant={"subtitle1"}>
+          Ideas for things I might want do work on later.
+        </Typography>
+        <Typography variant={"subtitle2"}>Last updated: 27 Feb 2024</Typography>
       </>
     </>
   );
