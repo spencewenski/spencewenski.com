@@ -6,24 +6,31 @@ import SourceHutLogo from "@/images/sourcehut.svg";
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
+import {
+  Architecture,
+  Code,
+  Create,
+  Info,
+  Lightbulb,
+} from "@mui/icons-material";
 
 export default function Summary({}) {
   return (
     <>
-      <Grid container marginBottom={2}>
+      <Grid container marginBottom={2} spacing={2}>
         <Grid item xs={12}>
-          <Typography variant={"h2"} align={"center"}>
-            Spencer Ferris
-          </Typography>
+          <Link
+            href={"/"}
+            passHref={true}
+            prefetch={false}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <Typography variant={"h2"} align={"center"}>
+              Spencer Ferris
+            </Typography>
+          </Link>
         </Grid>
         <Grid item xs={12} container spacing={2} justifyContent={"center"}>
-          <Grid item xs={"auto"}>
-            <Link href={"/"} passHref={true} prefetch={false}>
-              <Button variant={"contained"} startIcon={<HomeIcon />}>
-                Portfolio
-              </Button>
-            </Link>
-          </Grid>
           <Grid item xs={"auto"}>
             <Link
               href={"https://github.com/spencewenski"}
@@ -72,6 +79,8 @@ export default function Summary({}) {
               </Button>
             </Link>
           </Grid>
+        </Grid>
+        <Grid item xs={12} container spacing={2} justifyContent={"center"}>
           <Grid item xs={"auto"}>
             <Link href={"/faq"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
@@ -83,6 +92,27 @@ export default function Summary({}) {
             <Link href={"/contact"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<EmailIcon />}>
                 Contact
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item xs={"auto"}>
+            <Link href={"/ideas"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<Lightbulb />}>
+                Ideas
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item xs={"auto"}>
+            <Link href={"/now"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<Architecture />}>
+                Now
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item xs={"auto"}>
+            <Link href={"/about"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<Info />}>
+                About
               </Button>
             </Link>
           </Grid>
