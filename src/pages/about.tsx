@@ -1,6 +1,11 @@
 import Head from "next/head";
 import { Typography } from "@mui/material";
 import Link from "next/link";
+import SectionWrapper from "@/components/SectionWrapper";
+import BulletedList from "@/components/BulletedList";
+
+const UPDATED: string = "27 Feb 2024";
+const DONE_PREVIOUSLY: Array<string> = [];
 
 export default function About() {
   return (
@@ -15,7 +20,10 @@ export default function About() {
           A brief summary of what I&apos;ve worked on in the past. See my{" "}
           <Link href={"/"}>portfolio page</Link> for more details.
         </Typography>
-        <Typography variant={"subtitle2"}>Last updated: 27 Feb 2024</Typography>
+        <Typography variant={"subtitle2"}>Last updated: {UPDATED}</Typography>
+        <SectionWrapper>
+          <BulletedList listItems={DONE_PREVIOUSLY} />
+        </SectionWrapper>
       </>
     </>
   );
