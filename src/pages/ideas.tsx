@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { Typography } from "@mui/material";
-import BulletedList from "@/components/BulletedList";
+import BulletedList, { Input } from "@/components/BulletedList";
 import SectionWrapper from "@/components/SectionWrapper";
 
 const UPDATED: string = "27 Feb 2024";
-const IDEAS: Array<string> = [
+const IDEAS: Input["listItems"] = [
   "Mobile app to count stitches in crochet and knitting projects. Track statistics around time to complete rows/sections/projects, estimate time to finish projects, etc.",
   "REST API service written in Rust. Not sure what the service would do yet. Maybe some SaaS API.",
 ];

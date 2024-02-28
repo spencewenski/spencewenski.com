@@ -1,7 +1,8 @@
 import { List, ListItem } from "@mui/material";
+import { ReactNode } from "react";
 
 export type Input = {
-  listItems: Array<string>;
+  listItems: Array<ReactNode>;
 };
 
 export default function BulletedList({ listItems }: Input) {
