@@ -6,6 +6,7 @@ const TECHNOLOGIES: Array<string> = [
   "Next.js",
   "React",
   "TypeScript",
+  "Rails",
   "JavaScript",
   "Python",
   "C",
