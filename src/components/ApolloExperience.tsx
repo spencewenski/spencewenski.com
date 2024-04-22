@@ -8,7 +8,6 @@ const APOLLO_SENIOR_ENGINEER: Array<string> = [
   "Defines high-level architecture requirements",
   "Reviews and sign off on the team's engineering design reviews",
   "Works with PM and UX/UI designers to define new features",
-  "Provides feedback to UX/UI designers",
   "Performs interviews for the company",
   "Initiated engineering design reviews on our team",
   "Improved observability of our system with detailed metrics",
