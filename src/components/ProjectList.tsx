@@ -21,9 +21,10 @@ const PROJECTS: Array<ProjectInfo> = [
       // eslint-disable-next-line react/jsx-key
       <ul>
         <li>
-          Built on <Link href={"https://tokio.rs/"}>Tokio's</Link> web stack
-          (axum, tower, hyper, tracing). App behavior can be easily extended by
-          taking advantage of all the resources in the tokio ecosystem.
+          Built on <Link href={"https://tokio.rs/"}>Tokio&apos;s</Link> web
+          stack (axum, tower, hyper, tracing). App behavior can be easily
+          extended by taking advantage of all the resources in the tokio
+          ecosystem.
         </li>
         <li>
           Provides sane defaults so you can focus on building your app. Most of
@@ -47,7 +48,7 @@ const PROJECTS: Array<ProjectInfo> = [
           for running async/background jobs.
         </li>
         <li>
-          Structured logs/traces using Tokio's{" "}
+          Structured logs/traces using Tokio&apos;s{" "}
           <Link href={"https://docs.rs/tracing/latest/tracing/"}>tracing</Link>{" "}
           crate. Traces/metrics can be exported using OpenTelemetry.
         </li>
