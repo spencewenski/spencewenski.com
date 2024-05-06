@@ -79,8 +79,6 @@ export default function Summary({}) {
               </Button>
             </Link>
           </Grid>
-        </Grid>
-        <Grid item xs={12} container spacing={2} justifyContent={"center"}>
           <Grid item xs={"auto"}>
             <Link href={"/faq"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
@@ -92,27 +90,6 @@ export default function Summary({}) {
             <Link href={"/contact"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<EmailIcon />}>
                 Contact
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={"auto"}>
-            <Link href={"/ideas"} passHref={true} prefetch={false}>
-              <Button variant={"contained"} startIcon={<Lightbulb />}>
-                Ideas
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={"auto"}>
-            <Link href={"/now"} passHref={true} prefetch={false}>
-              <Button variant={"contained"} startIcon={<Architecture />}>
-                Now
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={"auto"}>
-            <Link href={"/about"} passHref={true} prefetch={false}>
-              <Button variant={"contained"} startIcon={<Info />}>
-                About
               </Button>
             </Link>
           </Grid>

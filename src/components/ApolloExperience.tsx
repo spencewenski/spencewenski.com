@@ -1,16 +1,25 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
 import BulletedList from "@/components/BulletedList";
+import TechnologiesList from "@/components/TechnologiesList";
 
 const APOLLO_SENIOR_ENGINEER: Array<string> = [
   "Senior engineer and tech lead on the Conversation Intelligence team",
-  "Defines high-level architecture requirements",
-  "Reviews and sign off on the team's engineering design reviews",
-  "Works with PM and UX/UI designers to define new features",
-  "Performs interviews for the company",
-  "Initiated engineering design reviews on our team",
-  "Improved observability of our system with detailed metrics",
+  "Defines high-level architecture requirements and reviews the team's engineering design reviews",
+  "Efficiently builds new features using Rails and React, complete with automated tests",
+  "Analyzes performance and stability of existing code and effectively fixes the more important issues",
+  "Performs interviews and mentors new members of the team",
+  "Improved the observability of our system by adding detailed metrics",
+];
+
+const TECHNOLOGIES: Array<string> = [
+  "Rails",
+  "React",
+  "TypeScript",
+  "Docker",
+  "Kubernetes",
+  "New Relic",
 ];
 
 export default function ApolloExperience({}) {
@@ -28,6 +37,8 @@ export default function ApolloExperience({}) {
             <BulletedList listItems={APOLLO_SENIOR_ENGINEER} />
           </Grid>
         </Grid>
+        <Divider style={{ marginBottom: "1em" }} />
+        <TechnologiesList technologies={TECHNOLOGIES} />
       </SectionWrapper>
     </>
   );

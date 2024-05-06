@@ -1,11 +1,14 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
 import BulletedList from "@/components/BulletedList";
+import TechnologiesList from "@/components/TechnologiesList";
 
 const INTERNSHIP_ACHIEVEMENTS: Array<string> = [
-  "Created a web app for tracking incident retrospectives using the Angular, SQL, and PHP (LAMP stack).",
+  "Created a web app for tracking incident retrospectives using the LAMP stack and a custom REST API.",
 ];
+
+const TECHNOLOGIES: Array<string> = ["Angular", "PHP", "MySQL", "LAMP"];
 
 export default function BoxExperience({}) {
   return (
@@ -18,6 +21,8 @@ export default function BoxExperience({}) {
           end={"Aug 2014"}
         />
         <BulletedList listItems={INTERNSHIP_ACHIEVEMENTS} />
+        <Divider style={{ marginBottom: "1em" }} />
+        <TechnologiesList technologies={TECHNOLOGIES} />
       </SectionWrapper>
     </>
   );

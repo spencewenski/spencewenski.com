@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { ReactNode, useEffect, useRef, useState } from "react";
@@ -64,6 +64,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
             {summary}
           </Typography>
         ))}
+        <Divider style={{ marginBottom: "1em" }} />
         <TechnologiesList technologies={projectInfo.technologies} />
         {(!!projectInfo.website || !!projectInfo.source) && (
           <Grid container spacing={1}>

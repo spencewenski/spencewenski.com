@@ -1,9 +1,10 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import ProjectDetails, { ProjectInfo } from "@/components/ProjectDetails";
 import BulletedList from "@/components/BulletedList";
 import SectionWrapper from "@/components/SectionWrapper";
 import RoleAndDate from "@/components/RoleAndDate";
 import WsiwImagePreview from "@/images/wsiw_preview.webp";
+import TechnologiesList from "@/components/TechnologiesList";
 
 const WSIW_PROJECT_INFO: ProjectInfo = {
   title: '"Alexa, What Should I Watch?"',
@@ -15,8 +16,17 @@ const WSIW_PROJECT_INFO: ProjectInfo = {
     '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I worked closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
     "The backend skill code was written using Java/Spring and was deployed on EC2, the UI was written using Alexa APL, and the dialog model was written using ACDL.",
   ],
-  technologies: ["Java", "Spring", "Alexa", "AWS"],
+  technologies: [],
 };
+
+const TECHNOLOGIES: Array<string> = [
+  "Java",
+  "Spring",
+  "Alexa",
+  "Android",
+  "AWS",
+  "Rust",
+];
 
 const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
   "Managed multiple beta releases before the public release of WSIW.",
@@ -75,6 +85,8 @@ export default function AmazonExperience({}) {
             <BulletedList listItems={SDE_INTERN_NOTABLE_ACHIEVEMENTS} />
           </Grid>
         </Grid>
+        <Divider style={{ marginBottom: "1em" }} />
+        <TechnologiesList technologies={TECHNOLOGIES} />
       </SectionWrapper>
     </>
   );
