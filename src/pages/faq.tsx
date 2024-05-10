@@ -10,6 +10,10 @@ type QA = {
 
 const QUESTIONS_AND_ANSWERS: Array<QA> = [
   {
+    question: "What are Spencer's pronouns?",
+    answer: "He/Him/His",
+  },
+  {
     question: "Is Spencer authorized to work in the US?",
     answer: "Yes. Spencer is a United States citizen.",
   },

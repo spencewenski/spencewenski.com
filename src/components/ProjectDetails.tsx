@@ -60,9 +60,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
           {projectInfo.title}
         </Typography>
         {projectInfo.summary.map((summary, index) => (
-          <Typography gutterBottom key={index}>
-            {summary}
-          </Typography>
+          <div key={index}> {summary}</div>
         ))}
         <Divider style={{ marginBottom: "1em" }} />
         <TechnologiesList technologies={projectInfo.technologies} />
