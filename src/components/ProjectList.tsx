@@ -63,6 +63,7 @@ const PROJECTS: Array<ProjectInfo> = [
       "OpenTelemetry",
     ],
     source: "https://github.com/roadster-rs/roadster",
+    website: "https://roadster.dev",
   },
   {
     title: "Mass Dissent",
