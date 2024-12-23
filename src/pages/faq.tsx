@@ -18,10 +18,6 @@ const QUESTIONS_AND_ANSWERS: Array<QA> = [
     answer: "Yes. Spencer is a United States citizen.",
   },
   {
-    question: "Where is Spencer located?",
-    answer: "Spencer lives in Seattle, Washington.",
-  },
-  {
     question:
       "Do you have any professional references who can speak to your work experience and skills?",
     answer: (
