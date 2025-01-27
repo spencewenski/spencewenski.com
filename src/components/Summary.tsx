@@ -48,38 +48,6 @@ export default function Summary({}) {
             </Link>
           </Grid>
           <Grid item xs={"auto"}>
-            <Link
-              href={"https://gitlab.com/spencewenski"}
-              passHref={true}
-              prefetch={false}
-            >
-              <Button
-                variant={"contained"}
-                startIcon={
-                  <SvgIcon component={GitLabIcon} viewBox={"100 100 200 200"} />
-                }
-              >
-                GitLab
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={"auto"}>
-            <Link
-              href={"https://git.sr.ht/~spencewenski/"}
-              passHref={true}
-              prefetch={false}
-            >
-              <Button
-                variant={"contained"}
-                startIcon={
-                  <SvgIcon component={SourceHutLogo} viewBox={"0 0 500 500"} />
-                }
-              >
-                sourcehut
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={"auto"}>
             <Link href={"/faq"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
                 FAQ
