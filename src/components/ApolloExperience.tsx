@@ -6,6 +6,7 @@ import TechnologiesList from "@/components/TechnologiesList";
 
 const APOLLO_SENIOR_ENGINEER: Array<string> = [
   "Senior engineer and tech lead on the Conversation Intelligence team",
+  "Lead adoption of the Sorbet type system for Apollo's Ruby on Rails monolith",
   "Defines high-level architecture requirements and reviews the team's engineering design reviews",
   "Efficiently builds new features using Rails and React, complete with automated tests",
   "Analyzes performance and stability of existing code and effectively fixes the more important issues",
