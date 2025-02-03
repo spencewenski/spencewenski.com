@@ -18,8 +18,10 @@ const TECHNOLOGIES: Array<string> = [
   "Rails",
   "React",
   "TypeScript",
+  "Sorbet",
   "Docker",
   "Kubernetes",
+  "OpenTelemetry",
   "New Relic",
 ];
 
