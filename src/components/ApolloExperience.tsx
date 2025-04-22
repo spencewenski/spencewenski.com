@@ -7,21 +7,22 @@ import TechnologiesList from "@/components/TechnologiesList";
 const APOLLO_SENIOR_ENGINEER: Array<string> = [
   "Senior engineer and tech lead on the Conversation Intelligence team",
   "Lead adoption of the Sorbet type system for Apollo's Ruby on Rails monolith",
-  "Defines high-level architecture requirements and reviews the team's engineering design reviews",
-  "Efficiently builds new features using Rails and React, complete with automated tests",
-  "Analyzes performance and stability of existing code and effectively fixes the more important issues",
-  "Performs interviews and mentors new members of the team",
-  "Improved the observability of our system by adding detailed metrics",
+  "Increased conversation processing workflow success rate from less than 70% to over 95%",
+  "Created framework to generate an OpenAPI schema from Sorbet-annotated Rails controller methods",
+  "Partners with PM, Research, and Design to develop CX improvements and drive adoption of our features",
+  "Efficiently builds new features using Rails and reusable React components, complete with automated tests",
 ];
 
 const TECHNOLOGIES: Array<string> = [
   "Rails",
+  "Ruby",
+  "Sorbet",
   "React",
   "TypeScript",
-  "Sorbet",
   "Docker",
   "Kubernetes",
-  "OpenTelemetry",
+  "Grafana",
+  "Open Telemetry",
   "New Relic",
 ];
 

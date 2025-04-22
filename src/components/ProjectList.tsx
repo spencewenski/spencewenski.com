@@ -16,7 +16,6 @@ const PROJECTS: Array<ProjectInfo> = [
         <Link href={"https://www.djangoproject.com/"}>Django</Link>,{" "}
         <Link href={"https://laravel.com/"}>Laravel</Link>,{" "}
         <Link href={"https://github.com/loco-rs/loco"}>Loco</Link>, and{" "}
-        <Link href={"https://github.com/poem-web/poem"}>Poem</Link>.
       </>,
       // eslint-disable-next-line react/jsx-key
       <ul>
@@ -37,7 +36,8 @@ const PROJECTS: Array<ProjectInfo> = [
         </li>
         <li>
           Built-in support for{" "}
-          <Link href={"https://crates.io/crates/sea-orm"}>SeaORM</Link>,
+          <Link href={"https://crates.io/crates/sea-orm"}>SeaORM</Link> and{" "}
+          <Link href={"https://crates.io/crates/diesel"}>Diesel</Link>,
           including creating DB connections and running DB migrations.
         </li>
         <li>
@@ -59,8 +59,9 @@ const PROJECTS: Array<ProjectInfo> = [
       "Sidekiq",
       "Postgres",
       "SeaORM",
+      "Diesel",
       "OpenAPI",
-      "OpenTelemetry",
+      "Open Telemetry",
     ],
     source: "https://github.com/roadster-rs/roadster",
     website: "https://roadster.dev",
