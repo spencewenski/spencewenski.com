@@ -16,8 +16,10 @@ const APOLLO_SENIOR_ENGINEER: Array<string> = [
 const TECHNOLOGIES: Array<string> = [
   "Rails",
   "Ruby",
+  "Sidekiq",
   "Sorbet",
   "React",
+  "MongoDb",
   "TypeScript",
   "Docker",
   "Kubernetes",
