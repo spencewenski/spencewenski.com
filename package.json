@@ -22,7 +22,7 @@
     "@trpc/react-query": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "@types/lodash": "^4.17.16",
-    "@types/node": "18.19.86",
+    "@types/node": "18.19.87",
     "@types/react": "18.3.20",
     "@types/react-dom": "18.3.6",
     "eslint": "8.57.1",
