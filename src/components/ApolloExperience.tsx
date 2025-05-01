@@ -19,7 +19,7 @@ const TECHNOLOGIES: Array<string> = [
   "Sidekiq",
   "Sorbet",
   "React",
-  "MongoDb",
+  "MongoDB",
   "TypeScript",
   "Docker",
   "Kubernetes",
