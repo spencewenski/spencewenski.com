@@ -43,11 +43,6 @@ const QUESTIONS_AND_ANSWERS: Array<QA> = [
       "No, Spencer will not relocate. However, he is able to work remotely.",
   },
   {
-    question:
-      "Are you willing to undergo a background check and drug screening?",
-    answer: "Yes.",
-  },
-  {
     question: "Have you ever been convicted of a felony or misdemeanor?",
     answer: "No.",
   },
