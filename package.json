@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && prettier -c .",
+    "prettier": "prettier --ignore-path .prettierignore --ignore-path .gitignore -c .",
+    "format": "prettier  --ignore-path .prettierignore --ignore-path .gitignore --write .",
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -r ./.next"

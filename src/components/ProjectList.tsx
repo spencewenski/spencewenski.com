@@ -26,8 +26,8 @@ const PROJECTS: Array<ProjectInfo> = [
           ecosystem.
         </li>
         <li>
-          Provides sensible defaults so you can focus on building your app. Most of
-          the built-in behavior can be customized or even disabled via
+          Provides sensible defaults so you can focus on building your app. Most
+          of the built-in behavior can be customized or even disabled via
           per-environment configuration files.
         </li>
         <li>
