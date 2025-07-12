@@ -14,8 +14,8 @@ const PROJECTS: Array<ProjectInfo> = [
         you moving fast 🏎️. Inspired by other fully-featured frameworks such as{" "}
         <Link href={"https://rubyonrails.org/"}>Rails</Link>,{" "}
         <Link href={"https://www.djangoproject.com/"}>Django</Link>,{" "}
-        <Link href={"https://laravel.com/"}>Laravel</Link>,{" "}
-        <Link href={"https://github.com/loco-rs/loco"}>Loco</Link>, and{" "}
+        <Link href={"https://laravel.com/"}>Laravel</Link>, and{" "}
+        <Link href={"https://github.com/loco-rs/loco"}>Loco</Link>.
       </>,
       // eslint-disable-next-line react/jsx-key
       <ul>
