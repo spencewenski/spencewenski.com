@@ -59,10 +59,10 @@ export default function AmazonExperience({}) {
             start={"Apr 2018"}
             end={"June 2023"}
           />
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <ProjectDetails projectInfo={WSIW_PROJECT_INFO} />
           </Grid>
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <Typography variant={"h6"} marginTop={1}>
               Other Notable Achievements
             </Typography>
@@ -73,7 +73,7 @@ export default function AmazonExperience({}) {
             start={"Aug 2016"}
             end={"Apr 2018"}
           />
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <BulletedList listItems={SDE_I_NOTABLE_ACHIEVEMENTS} />
           </Grid>
           <RoleAndDate
@@ -81,7 +81,7 @@ export default function AmazonExperience({}) {
             start={"May 2015"}
             end={"Aug 2015"}
           />
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <BulletedList listItems={SDE_INTERN_NOTABLE_ACHIEVEMENTS} />
           </Grid>
         </Grid>

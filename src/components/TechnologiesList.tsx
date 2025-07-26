@@ -9,7 +9,7 @@ export default function TechnologiesList({ technologies }: Input) {
     <>
       <Grid container spacing={1} marginBottom={"1em"}>
         {technologies.map((technology) => (
-          <Grid key={technology} item xs={"auto"}>
+          <Grid key={technology} size={{ xs: "auto" }}>
             <Chip variant={"outlined"} label={technology} />
           </Grid>
         ))}

@@ -11,15 +11,14 @@ export default function RoleAndDate({ role, start, end }: Input) {
     <>
       <Grid
         container
-        item
-        xs={12}
+        size={{ xs: 12 }}
         justifyContent={"space-between"}
         alignItems={"flex-end"}
       >
-        <Grid item xs={12} sm={9}>
+        <Grid size={{ xs: 12, sm: 9 }}>
           <Typography variant={"h5"}>{role}</Typography>
         </Grid>
-        <Grid item xs={"auto"}>
+        <Grid size={{ xs: "auto" }}>
           <Typography>
             {start} - {end}
           </Typography>

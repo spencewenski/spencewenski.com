@@ -18,7 +18,7 @@ export default function Summary({}) {
   return (
     <>
       <Grid container marginBottom={2} spacing={2}>
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <Link
             href={"/"}
             passHref={true}
@@ -30,8 +30,8 @@ export default function Summary({}) {
             </Typography>
           </Link>
         </Grid>
-        <Grid item xs={12} container spacing={2} justifyContent={"center"}>
-          <Grid item xs={"auto"}>
+        <Grid size={{ xs: 12 }} container spacing={2} justifyContent={"center"}>
+          <Grid size={{ xs: "auto" }}>
             <Link
               href={"https://github.com/spencewenski"}
               passHref={true}
@@ -47,14 +47,14 @@ export default function Summary({}) {
               </Button>
             </Link>
           </Grid>
-          <Grid item xs={"auto"}>
+          <Grid size={{ xs: "auto" }}>
             <Link href={"/faq"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
                 FAQ
               </Button>
             </Link>
           </Grid>
-          <Grid item xs={"auto"}>
+          <Grid size={{ xs: "auto" }}>
             <Link href={"/contact"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<EmailIcon />}>
                 Contact

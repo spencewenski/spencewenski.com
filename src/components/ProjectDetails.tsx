@@ -43,7 +43,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
   return (
     <Grid container spacing={2}>
       {!!projectInfo.imageUrl && (
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box height={imageHeight} position={"relative"} ref={imageWrapperRef}>
             <Image
               src={projectInfo.imageUrl}
@@ -55,7 +55,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
           </Box>
         </Grid>
       )}
-      <Grid item xs={12} md={!!projectInfo.imageUrl ? 6 : 12}>
+      <Grid size={{ xs: 12, md: !!projectInfo.imageUrl ? 6 : 12 }}>
         <Typography variant={"h6"} gutterBottom>
           {projectInfo.title}
         </Typography>
@@ -67,7 +67,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
         {(!!projectInfo.website || !!projectInfo.source) && (
           <Grid container spacing={1}>
             {!!projectInfo.website && (
-              <Grid item xs={"auto"}>
+              <Grid size={{ xs: "auto" }}>
                 <Link
                   href={projectInfo.website}
                   passHref={true}
@@ -80,7 +80,7 @@ export default function ProjectDetails({ projectInfo }: Input) {
               </Grid>
             )}
             {!!projectInfo.source && (
-              <Grid item xs={"auto"}>
+              <Grid size={{ xs: "auto" }}>
                 <Link
                   href={projectInfo.source}
                   passHref={true}

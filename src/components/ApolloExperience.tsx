@@ -39,7 +39,7 @@ export default function ApolloExperience({}) {
             start={"July 2023"}
             end={"Present"}
           />
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <BulletedList listItems={APOLLO_SENIOR_ENGINEER} />
           </Grid>
         </Grid>

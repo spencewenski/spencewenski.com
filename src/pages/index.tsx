@@ -13,15 +13,15 @@ export default function Home() {
       </Head>
       <>
         <Grid container spacing={2}>
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <Typography variant={"h3"}>Professional Experience</Typography>
             <ProfessionalExperience />
           </Grid>
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <Typography variant={"h3"}>Personal Projects</Typography>
             <ProjectList />
           </Grid>
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <Typography variant={"h3"}>Technologies</Typography>
             <Technologies />
           </Grid>

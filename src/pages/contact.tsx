@@ -142,7 +142,7 @@ export default function Contact({}) {
             onSubmit={handleFormSubmitted}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12}>
+              <Grid size={{ xs: 12 }}>
                 <CustomTextField
                   label={"Email"}
                   state={{
@@ -154,7 +154,7 @@ export default function Contact({}) {
                   helperText={() => "Please provide your email address."}
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid size={{ xs: 12 }}>
                 <CustomTextField
                   label={"Salary Range"}
                   state={{
@@ -167,7 +167,7 @@ export default function Contact({}) {
                   }
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid size={{ xs: 12 }}>
                 <CustomTextField
                   label={"Message"}
                   state={{
@@ -179,7 +179,7 @@ export default function Contact({}) {
                   helperText={() => "Please write a message."}
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid size={{ xs: 12 }}>
                 <Tooltip title={submitErrorMessage}>
                   {/*https://mui.com/material-ui/react-tooltip/#disabled-elements*/}
                   <span>

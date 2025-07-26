@@ -114,7 +114,7 @@ export default function ProjectList({}) {
   return (
     <Grid container spacing={2}>
       {PROJECTS.map((project, index) => (
-        <Grid key={project.title} item xs={12}>
+        <Grid key={project.title} size={{ xs: 12 }}>
           <ProjectListItem projectInfo={project} />
         </Grid>
       ))}

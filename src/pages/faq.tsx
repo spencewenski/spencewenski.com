@@ -74,7 +74,7 @@ export default function FAQ() {
       </Typography>
       <Grid container spacing={2}>
         {QUESTIONS_AND_ANSWERS.map((qa) => (
-          <Grid item xs={12} key={qa.question}>
+          <Grid size={{ xs: 12 }} key={qa.question}>
             <Paper
               variant={"outlined"}
               sx={{ backgroundColor: "#f4f4f4", padding: "1em" }}
