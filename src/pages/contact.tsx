@@ -68,7 +68,7 @@ export default function Contact({}) {
   }, [formSuccess, setContactLS]);
 
   const handleFormSubmitted = useCallback(
-    async (e: FormEvent<HTMLDivElement>) => {
+    async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       e.stopPropagation();
       await sendMessageFromContactPageMutation.mutateAsync({
