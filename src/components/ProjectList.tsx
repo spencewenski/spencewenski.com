@@ -99,7 +99,8 @@ const PROJECTS: Array<ProjectInfo> = [
     ],
     technologies: ["C", "Pebble", "MVC"],
     source: "https://gitlab.com/spencewenski/pebble_grouped_timers",
-    website: "https://apps.repebble.com/en_US/application/58f985730dfc329fda001649",
+    website:
+      "https://apps.repebble.com/en_US/application/58f985730dfc329fda001649",
   },
   {
     title: "Financial Transaction Processor",
