@@ -1,6 +1,7 @@
 import { Button, Grid, SvgIcon, Typography } from "@mui/material";
 import Link from "next/link";
 import GitHubIcon from "@/images/github-mark.svg";
+import LinkedInIcon from "@/images/linkedin.svg";
 import GitLabIcon from "@/images/gitlab-logo-500.svg";
 import SourceHutLogo from "@/images/sourcehut.svg";
 import EmailIcon from "@mui/icons-material/Email";
@@ -48,9 +49,22 @@ export default function Summary({}) {
             </Link>
           </Grid>
           <Grid size={{ xs: "auto" }}>
-            <Link href={"/faq"} passHref={true} prefetch={false}>
-              <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
-                FAQ
+            <Link
+              href={"https://linkedin.com/in/spencerferris"}
+              passHref={true}
+              prefetch={false}
+            >
+              <Button
+                variant={"contained"}
+                startIcon={
+                  <SvgIcon
+                    component={LinkedInIcon}
+                    viewBox={"0 0 24 24"}
+                    style={{ color: "white" }}
+                  />
+                }
+              >
+                LinkedIn
               </Button>
             </Link>
           </Grid>
@@ -58,6 +72,13 @@ export default function Summary({}) {
             <Link href={"/contact"} passHref={true} prefetch={false}>
               <Button variant={"contained"} startIcon={<EmailIcon />}>
                 Contact
+              </Button>
+            </Link>
+          </Grid>
+          <Grid size={{ xs: "auto" }}>
+            <Link href={"/faq"} passHref={true} prefetch={false}>
+              <Button variant={"contained"} startIcon={<QuestionAnswerIcon />}>
+                FAQ
               </Button>
             </Link>
           </Grid>

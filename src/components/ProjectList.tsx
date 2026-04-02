@@ -103,6 +103,12 @@ const PROJECTS: Array<ProjectInfo> = [
       "https://apps.repebble.com/en_US/application/58f985730dfc329fda001649",
   },
   {
+    title: "PGMQ (Contributor)",
+    summary: ["Message queue similar to AWS SQS but backed by Postgres."],
+    technologies: ["Rust", "Postgres"],
+    source: "https://github.com/pgmq/pgmq",
+  },
+  {
     title: "Financial Transaction Processor",
     summary: [
       "A simple CLI application written to transform transaction records of financial accounts to different formats for the purpose of importing into personal budgeting software.",

@@ -18,7 +18,7 @@ export default function Home() {
             <ProfessionalExperience />
           </Grid>
           <Grid size={{ xs: 12 }}>
-            <Typography variant={"h3"}>Personal Projects</Typography>
+            <Typography variant={"h3"}>Projects & Open Source</Typography>
             <ProjectList />
           </Grid>
           <Grid size={{ xs: 12 }}>
