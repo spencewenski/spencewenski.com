@@ -29,19 +29,17 @@ const TECHNOLOGIES: Array<string> = [
 ];
 
 const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
-  "Managed multiple beta releases before the public release of WSIW.",
-  "Collaborated with an Alexa Science team to improve the level of personalization of our recommendations.",
-  "Ran A/B tests to measure how new features and UX changes impact our key metrics.",
-  "Developed an Android application to enable Amazon Music and other media apps to integrate with Alexa for fully featured voice support.",
-  "Worked with the Alexa Video team to enable playing a specific season and episode of a show using Alexa.",
-  "Ran a working group to improve the operational excellence of my team's (and our sister team's) code.",
-  "Actively involved in mentoring, code reviews, and interviewing.",
+  "Created a new Alexa skill; collaborated with PMs on the desired UX, defined the architecture, and implemented the code",
+  "Designed and implemented an Android application to enable media apps to integrate with Alexa for full voice support",
+  "Collaborated with the Alexa Video team to enable playing a specific season and episode of a show using voice",
+  "Lead project to ensure operational readiness of multiple services ahead of expected holiday traffic spikes",
+  "Performed code reviews regularly to maintain code quality, share knowledge, and mentor team members",
+  "Interviewed candidates at my level and below across multiple technical and leadership competencies",
 ];
 
 const SDE_I_NOTABLE_ACHIEVEMENTS: Array<string> = [
-  "Developed an Android service to automatically enable using Alexa for transport controls (play/pause/etc) in 3P applications.",
-  "Added auto-scrolling lyrics to the Alexa Music UI on FireTV.",
-  "Ran sprint planning, sprint retrospectives, and standup as my team's Scrum Master.",
+  "Implemented auto-scrolling lyrics in Alexa Music UI on FireTV using Android RecyclerView and Media Session",
+  "Enhanced an Android service to relay media state to Alexa and facilitate transport controls in 3P apps seamlessly for developers",
 ];
 
 const SDE_INTERN_NOTABLE_ACHIEVEMENTS: Array<string> = [
