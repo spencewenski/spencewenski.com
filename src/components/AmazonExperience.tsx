@@ -30,7 +30,7 @@ const TECHNOLOGIES: Array<string> = [
 
 const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
   "Created a new Alexa skill; collaborated with PMs on the desired UX, defined the architecture, and implemented the code",
-  "Designed and implemented an Android application to enable media apps to integrate with Alexa for full voice support",
+  "Unblocked Spotify release on original FireTV Cube by adding support for full media playback control with Alexa",
   "Collaborated with the Alexa Video team to enable playing a specific season and episode of a show using voice",
   "Lead project to ensure operational readiness of multiple services ahead of expected holiday traffic spikes",
   "Performed code reviews regularly to maintain code quality, share knowledge, and mentor team members",
