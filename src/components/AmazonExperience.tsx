@@ -39,7 +39,7 @@ const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
 
 const SDE_I_NOTABLE_ACHIEVEMENTS: Array<string> = [
   "Implemented auto-scrolling lyrics in Alexa Music UI on FireTV using Android RecyclerView and Media Session",
-  "Enhanced an Android service to relay media state to Alexa and facilitate transport controls in 3P apps seamlessly for developers",
+  "Enhanced an Android service to relay media state to Alexa and facilitate seamless transport controls in third-party media apps",
 ];
 
 const SDE_INTERN_NOTABLE_ACHIEVEMENTS: Array<string> = [
