@@ -41,7 +41,7 @@ export default function ApolloExperience({}) {
       <SectionWrapper>
         <Grid container>
           <RoleAndDate
-            role={"Senior Software Engineer"}
+            role={"Senior Software Engineer / Tech Lead"}
             start={"July 2023"}
             end={"Present"}
           />
