@@ -9,6 +9,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import {
   Architecture,
+  CalendarMonth,
   Code,
   Create,
   Info,
@@ -65,6 +66,17 @@ export default function Summary({}) {
                 }
               >
                 LinkedIn
+              </Button>
+            </Link>
+          </Grid>
+          <Grid size={{ xs: "auto" }}>
+            <Link
+              href={"https://cal.com/spencewenski/interview"}
+              passHref={true}
+              prefetch={false}
+            >
+              <Button variant={"contained"} startIcon={<CalendarMonth />}>
+                Availability
               </Button>
             </Link>
           </Grid>

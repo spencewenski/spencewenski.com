@@ -10,6 +10,18 @@ type QA = {
 
 const QUESTIONS_AND_ANSWERS: Array<QA> = [
   {
+    question: "Is Spencer available for an interview?",
+    answer: (
+      <Typography>
+        Use the following link to see Spencer&apos;s availability and request an
+        interview:{" "}
+        <Link href={"https://cal.com/spencewenski/interview"}>
+          cal.com/spencewenski/interview
+        </Link>
+      </Typography>
+    ),
+  },
+  {
     question: "What are Spencer's pronouns?",
     answer: "He/Him/His",
   },
