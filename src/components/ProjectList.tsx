@@ -7,6 +7,40 @@ import Link from "next/link";
 
 const PROJECTS: Array<ProjectInfo> = [
   {
+    title: "PGMQ (Collaborator; 5K Stars)",
+    summary: [
+      <>Message queue similar to AWS SQS but backed by Postgres.</>,
+      // eslint-disable-next-line react/jsx-key
+      <ul>
+        <li>
+          Lightweight - No background worker or external dependencies, just
+          Postgres and Rust
+        </li>
+        <li>
+          Guaranteed &quot;exactly once&quot; delivery of messages to a consumer
+          within a visibility timeout
+        </li>
+        <li>API parity with AWS SQS</li>
+        <li>
+          FIFO (First-In-First-Out) queues with message group keys for ordered
+          processing
+        </li>
+        <li>
+          Topic-based routing with wildcard patterns for publish-subscribe and
+          content-based routing
+        </li>
+        <li>Messages stay in the queue until explicitly removed</li>
+        <li>
+          Messages can be archived, instead of deleted, for long-term retention
+          and replayability
+        </li>
+        <li>Completely asynchronous API</li>
+      </ul>,
+    ],
+    technologies: ["Rust", "Postgres"],
+    source: "https://github.com/pgmq/pgmq",
+  },
+  {
     title: "Roadster",
     summary: [
       <>
@@ -101,12 +135,6 @@ const PROJECTS: Array<ProjectInfo> = [
     source: "https://gitlab.com/spencewenski/pebble_grouped_timers",
     website:
       "https://apps.repebble.com/en_US/application/58f985730dfc329fda001649",
-  },
-  {
-    title: "PGMQ (Contributor)",
-    summary: ["Message queue similar to AWS SQS but backed by Postgres."],
-    technologies: ["Rust", "Postgres"],
-    source: "https://github.com/pgmq/pgmq",
   },
   {
     title: "Financial Transaction Processor",

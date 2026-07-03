@@ -13,7 +13,7 @@ const WSIW_PROJECT_INFO: ProjectInfo = {
   imageHeight: 1080,
   imagePriority: true,
   summary: [
-    '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. I worked closely with PMs/TPMs to align on the desired features, with UX on how to best design the features, and with the Alexa Conversations team to implement our dialog model and improve the Alexa Conversations platform.',
+    '"What Should I Watch?" (WSIW) is a conversational Alexa skill for FireTV that recommends content to watch. Lead cross-functional team consisting of PMs, UX designers, and Alexa Platform engineers to create a new multimodal Alexa skill for FireTV.',
     "The backend skill code was written using Java/Spring and was deployed on EC2, the UI was written using Alexa APL, and the dialog model was written using ACDL.",
   ],
   technologies: [],
@@ -29,17 +29,15 @@ const TECHNOLOGIES: Array<string> = [
 ];
 
 const SDE_II_NOTABLE_ACHIEVEMENTS: Array<string> = [
-  "Created a new Alexa skill; collaborated with PMs on the desired UX, defined the architecture, and implemented the code",
-  "Unblocked Spotify release on original FireTV Cube by adding support for full media playback control with Alexa",
-  "Collaborated with the Alexa Video team to enable playing a specific season and episode of a show using voice",
-  "Lead project to ensure operational readiness of multiple services ahead of expected holiday traffic spikes",
-  "Performed code reviews regularly to maintain code quality, share knowledge, and mentor team members",
-  "Interviewed candidates at my level and below across multiple technical and leadership competencies",
+  "Collaborated with Amazon Music and external Spotify developers to unblock Spotify release on original FireTV Cube by adding support for full media control with Alexa",
+  "Worked with the Alexa Video team to enable playing a specific season and episode of a show using voice",
+  "Stress-tested FireTV services ahead of holiday traffic; zero p99 latency or error SLA breaches over the holidays",
+  "Interviewed and evaluated candidates across multiple technical and leadership competencies",
 ];
 
 const SDE_I_NOTABLE_ACHIEVEMENTS: Array<string> = [
   "Implemented auto-scrolling lyrics in Alexa Music UI on FireTV using Android RecyclerView and Media Session",
-  "Enhanced an Android service to relay media state to Alexa and facilitate seamless transport controls in third-party media apps",
+  "Enhanced an Android service to relay media state to Alexa and facilitate seamless transport controls in 3P media apps",
 ];
 
 const SDE_INTERN_NOTABLE_ACHIEVEMENTS: Array<string> = [
