@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Spencewenski</title>
+        <title>Spencer Ferris</title>
       </Head>
       <>
         <Grid container spacing={2}>
